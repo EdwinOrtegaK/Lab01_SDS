@@ -1,0 +1,14 @@
+
+MODEL: logreg
+VAL  precision=0.8234 recall=0.7246 auc=0.8711
+TEST precision=0.8367 recall=0.7099 auc=0.8790
+VAL  CM=[[703, 136], [241, 634]]
+TEST CM=[[1507, 234], [490, 1199]]
+BR scenario (15%, 50k) alarms+=11036 alarms-=38964, FP=5712, TP=5324
+
+MODEL: random_forest
+VAL  precision=0.8366 recall=0.8720 auc=0.9279
+TEST precision=0.8657 recall=0.8626 auc=0.9410
+VAL  CM=[[690, 149], [112, 763]]
+TEST CM=[[1515, 226], [232, 1457]]
+BR scenario (15%, 50k) alarms+=11987 alarms-=38013, FP=5517, TP=6470
